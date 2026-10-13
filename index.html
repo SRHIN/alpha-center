@@ -286,109 +286,32 @@
 <body>
 
   <!-- ========================================== -->
-  <!-- 1. OFFICIAL SRHIN HEADER                   -->
+  <!-- 1. ALPHA LANDING HEADER                    -->
   <!-- ========================================== -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all font-['Manrope',sans-serif]">
-    <!-- Top Utility Bar: Regional Selector -->
-    <div class="border-b border-slate-100 bg-slate-50/80 text-xs font-body text-slate-600">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-end items-center h-8">
-        <div class="relative" id="srhinRegionDropdown">
-          <button type="button" id="srhinRegionBtn" aria-expanded="false" class="inline-flex items-center gap-1.5 font-medium hover:text-[#009900] transition py-1">
-            <span>SRHIN Global</span>
-            <span class="material-symbols-outlined text-sm transition-transform duration-200" id="srhinRegionChevron">expand_more</span>
-          </button>
-          <div id="srhinRegionMenu" class="hidden absolute right-0 top-full mt-1 w-44 bg-white border border-slate-200 rounded-xl shadow-lg py-1.5 z-50">
-            <a href="https://srhin.org/" class="block px-4 py-2 hover:bg-slate-50 hover:text-[#009900] font-medium transition">SRHIN Africa</a>
-            <a href="http://sierraleone.srhin.org" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 hover:bg-slate-50 hover:text-[#009900] font-medium transition">SRHIN Sierra Leone</a>
-            <a href="http://uganda.srhin.org" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 hover:bg-slate-50 hover:text-[#009900] font-medium transition">SRHIN Uganda</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Main Navigation Bar -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Brand Logo: Exact 1.5rem (24px) on mobile -->
-        <a href="https://srhin.org/" class="flex-shrink-0 flex items-center">
+        <!-- Brand / SRHIN Logo -->
+        <a href="#" class="flex-shrink-0 flex items-center">
           <img src="https://srhin.org/wp-content/uploads/2023/02/Logo-with-horizontal-text-colour@4x.png" alt="Slum and Rural Health Initiative" class="h-6 sm:h-11 max-w-[150px] sm:max-w-[220px] w-auto object-contain">
         </a>
 
         <!-- Desktop Nav Items -->
         <nav class="hidden lg:flex items-center space-x-1 text-[15px] font-medium text-slate-700">
-          <a href="https://srhin.org/" class="px-3.5 py-2 rounded-lg hover:text-[#009900] transition">Home</a>
-
-          <!-- Dropdown: About Us -->
-          <div class="relative group">
-            <button type="button" class="inline-flex items-center gap-1 px-3.5 py-2 rounded-lg group-hover:text-[#009900] transition">
-              <span>About Us</span>
-              <span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180 duration-200">expand_more</span>
-            </button>
-            <div class="absolute left-0 top-full hidden group-hover:block group-focus-within:block w-56 pt-2 z-50">
-              <div class="bg-white border border-slate-200 rounded-2xl shadow-xl py-2 overflow-hidden">
-                <a href="https://srhin.org/our-values/" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">Our Values</a>
-                <a href="https://srhin.org/leadership-team/" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">Our Team</a>
-                <a href="https://srhin.org/global-advisory-board/" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">Global Advisory Board</a>
-                <a href="https://srhin.org/anthem-and-pledge/" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">Our Voice &amp; Commitment</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Dropdown: Work With Us -->
-          <div class="relative group">
-            <button type="button" class="inline-flex items-center gap-1 px-3.5 py-2 rounded-lg group-hover:text-[#009900] transition">
-              <span>Work With Us</span>
-              <span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180 duration-200">expand_more</span>
-            </button>
-            <div class="absolute left-0 top-full hidden group-hover:block group-focus-within:block w-52 pt-2 z-50">
-              <div class="bg-white border border-slate-200 rounded-2xl shadow-xl py-2 overflow-hidden">
-                <a href="https://srhin.org/our-work/" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">Our Work</a>
-                <a href="https://srhin.org/career/" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">Join Our Team</a>
-                <a href="https://srhin.org/partner-with-us/" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">Partner With Us</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Dropdown: Insights & Impact -->
-          <div class="relative group">
-            <button type="button" class="inline-flex items-center gap-1 px-3.5 py-2 rounded-lg group-hover:text-[#009900] transition">
-              <span>Insights &amp; Impact</span>
-              <span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180 duration-200">expand_more</span>
-            </button>
-            <div class="absolute left-0 top-full hidden group-hover:block group-focus-within:block w-52 pt-2 z-50">
-              <div class="bg-white border border-slate-200 rounded-2xl shadow-xl py-2 overflow-hidden">
-                <a href="https://srhin.org/our-impact/" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">Our Impact</a>
-                <a href="https://srhin.org/blog-database/" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">News &amp; Blog</a>
-                <a href="https://srhin.org/stories-of-impact/" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">Stories of Impact</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Dropdown: Research Centers (ALPHA Active) -->
-          <div class="relative group">
-            <button type="button" class="inline-flex items-center gap-1 px-3.5 py-2 rounded-lg group-hover:text-[#009900] transition">
-              <span>Research Centers</span>
-              <span class="material-symbols-outlined text-base transition-transform group-hover:rotate-180 duration-200">expand_more</span>
-            </button>
-            <div class="absolute left-0 top-full hidden group-hover:block group-focus-within:block w-56 pt-2 z-50">
-              <div class="bg-white border border-slate-200 rounded-2xl shadow-xl py-2 overflow-hidden">
-                <a href="https://alpha.srhin.org" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] font-bold text-[#009900] transition">ALPHA</a>
-                <a href="https://prime.srhin.org" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">PRIME</a>
-                <a href="https://mhile.srhin.org" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">MHILE</a>
-                <a href="https://cohazd.srhin.org" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">COHAZD</a>
-                <a href="https://cempher.srhin.org" class="block px-4 py-2.5 text-sm hover:bg-slate-50 hover:text-[#009900] transition">CEMPHER</a>
-              </div>
-            </div>
-          </div>
-
-          <a href="https://srhin.org/contact-us/" class="px-3.5 py-2 rounded-lg hover:text-[#009900] transition">Contact</a>
+          <a href="#" class="px-3.5 py-2 rounded-lg hover:text-[#009900] transition">Home</a>
+          <a href="#innovations" class="px-3.5 py-2 rounded-lg hover:text-[#009900] transition">Innovations</a>
+          <a href="#projects" class="px-3.5 py-2 rounded-lg hover:text-[#009900] transition">Projects</a>
+          <a href="#blogs" class="px-3.5 py-2 rounded-lg hover:text-[#009900] transition">Insights &amp; News</a>
+          <a href="#team" class="px-3.5 py-2 rounded-lg hover:text-[#009900] transition">Our Team</a>
+          <a href="#contact" class="px-3.5 py-2 rounded-lg hover:text-[#009900] transition">Contact</a>
         </nav>
 
-        <!-- Right: Donate CTA Button (Hidden on Mobile) & Mobile Trigger -->
+        <!-- Right: Contact CTA -->
         <div class="flex items-center gap-3">
-          <a href="https://srhin.org/donate/" class="hidden sm:inline-flex items-center justify-center bg-[#009900] hover:bg-[#007a00] text-white font-semibold text-sm px-5 py-2.5 rounded-full transition duration-150 shadow-sm">
-            Donate Now
+          <a href="mailto:hello@srhin.org" class="hidden sm:inline-flex items-center justify-center bg-[#009900] hover:bg-[#007a00] text-white font-semibold text-sm px-5 py-2.5 rounded-full transition duration-150 shadow-sm">
+            Contact Center
           </a>
 
           <button type="button" id="srhinMobileToggle" aria-label="Toggle Navigation Menu" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition focus:outline-none">
@@ -401,69 +324,16 @@
 
     <!-- Mobile Drawer Menu -->
     <div id="srhinMobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-6 py-6 space-y-4 font-body text-base max-h-[85vh] overflow-y-auto shadow-xl">
-      <a href="https://srhin.org/" class="block font-medium py-2 border-b border-slate-100">Home</a>
-
-      <!-- Mobile Accordion: About Us -->
-      <details class="group border-b border-slate-100 pb-2">
-        <summary class="flex justify-between items-center py-2 font-medium cursor-pointer list-none">
-          <span>About Us</span>
-          <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span>
-        </summary>
-        <div class="pl-4 py-2 space-y-2 text-sm text-slate-600">
-          <a href="https://srhin.org/our-values/" class="block py-1 hover:text-[#009900]">Our Values</a>
-          <a href="https://srhin.org/leadership-team/" class="block py-1 hover:text-[#009900]">Our Team</a>
-          <a href="https://srhin.org/global-advisory-board/" class="block py-1 hover:text-[#009900]">Global Advisory Board</a>
-          <a href="https://srhin.org/anthem-and-pledge/" class="block py-1 hover:text-[#009900]">Our Voice &amp; Commitment</a>
-        </div>
-      </details>
-
-      <!-- Mobile Accordion: Work With Us -->
-      <details class="group border-b border-slate-100 pb-2">
-        <summary class="flex justify-between items-center py-2 font-medium cursor-pointer list-none">
-          <span>Work With Us</span>
-          <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span>
-        </summary>
-        <div class="pl-4 py-2 space-y-2 text-sm text-slate-600">
-          <a href="https://srhin.org/our-work/" class="block py-1 hover:text-[#009900]">Our Work</a>
-          <a href="https://srhin.org/career/" class="block py-1 hover:text-[#009900]">Join Our Team</a>
-          <a href="https://srhin.org/partner-with-us/" class="block py-1 hover:text-[#009900]">Partner With Us</a>
-        </div>
-      </details>
-
-      <!-- Mobile Accordion: Insights & Impact -->
-      <details class="group border-b border-slate-100 pb-2">
-        <summary class="flex justify-between items-center py-2 font-medium cursor-pointer list-none">
-          <span>Insights &amp; Impact</span>
-          <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span>
-        </summary>
-        <div class="pl-4 py-2 space-y-2 text-sm text-slate-600">
-          <a href="https://srhin.org/our-impact/" class="block py-1 hover:text-[#009900]">Our Impact</a>
-          <a href="https://srhin.org/blog-database/" class="block py-1 hover:text-[#009900]">News &amp; Blog</a>
-          <a href="https://srhin.org/stories-of-impact/" class="block py-1 hover:text-[#009900]">Stories of Impact</a>
-        </div>
-      </details>
-
-      <!-- Mobile Accordion: Research Centers -->
-      <details class="group border-b border-slate-100 pb-2">
-        <summary class="flex justify-between items-center py-2 font-medium cursor-pointer list-none">
-          <span>Research Centers</span>
-          <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span>
-        </summary>
-        <div class="pl-4 py-2 space-y-2 text-sm text-slate-600">
-          <a href="https://alpha.srhin.org" class="block py-1 font-bold text-[#009900]">ALPHA</a>
-          <a href="https://prime.srhin.org" class="block py-1 hover:text-[#009900]">PRIME</a>
-          <a href="https://mhile.srhin.org" class="block py-1 hover:text-[#009900]">MHILE</a>
-          <a href="https://cohazd.srhin.org" class="block py-1 hover:text-[#009900]">COHAZD</a>
-          <a href="https://cempher.srhin.org" class="block py-1 hover:text-[#009900]">CEMPHER</a>
-        </div>
-      </details>
-
-      <a href="https://srhin.org/contact-us/" class="block font-medium py-2 border-b border-slate-100">Contact</a>
-
-      <!-- In-Menu Mobile Donate Button -->
+      <a href="#" class="block font-medium py-2 border-b border-slate-100">Home</a>
+      <a href="#innovations" class="block font-medium py-2 border-b border-slate-100">Innovations</a>
+      <a href="#projects" class="block font-medium py-2 border-b border-slate-100">Projects</a>
+      <a href="#blogs" class="block font-medium py-2 border-b border-slate-100">Insights &amp; News</a>
+      <a href="#team" class="block font-medium py-2 border-b border-slate-100">Our Team</a>
+      <a href="#contact" class="block font-medium py-2 border-b border-slate-100">Contact</a>
+      
       <div class="pt-2">
-        <a href="https://srhin.org/donate/" class="w-full inline-flex items-center justify-center bg-[#009900] hover:bg-[#007a00] text-white font-semibold text-sm px-5 py-3 rounded-full transition duration-150 shadow-sm">
-          Donate Now
+        <a href="mailto:hello@srhin.org" class="w-full inline-flex items-center justify-center bg-[#009900] hover:bg-[#007a00] text-white font-semibold text-sm px-5 py-3 rounded-full transition duration-150 shadow-sm">
+          Contact Center
         </a>
       </div>
     </div>
@@ -539,7 +409,7 @@
   </section>
 
   <!-- ========================================== -->
-  <!-- 4. PARTNERS & FUNDERS MARQUEE (Aligned Edge Fade) -->
+  <!-- 4. PARTNERS & FUNDERS MARQUEE              -->
   <!-- ========================================== -->
   <section class="py-20 bg-slate-50 border-t border-b border-slate-100">
     <div class="max-w-6xl mx-auto px-6 space-y-10">
@@ -554,7 +424,7 @@
         </p>
       </div>
 
-      <!-- Marquee Wrapper Aligned Flush With Section Boundary -->
+      <!-- Marquee Wrapper -->
       <div class="space-y-6" id="srhinPartnersSection">
         <!-- Top Row -->
         <div class="srhin-marquee-row" id="marqueeRowTop">
@@ -588,7 +458,7 @@
   <!-- ========================================== -->
   <!-- 5. EXPLORE OUR INNOVATIONS (TABBED)        -->
   <!-- ========================================== -->
-  <section class="py-24 px-6 max-w-6xl mx-auto space-y-12">
+  <section id="innovations" class="py-24 px-6 max-w-6xl mx-auto space-y-12">
     <div class="space-y-2">
       <div class="flex items-center gap-2 text-xs uppercase tracking-wider text-[#009900] font-bold font-body">
         <span class="w-6 h-0.5 bg-[#009900]"></span>
@@ -649,7 +519,7 @@
             An AI-powered clinical support tool that helps frontline healthcare workers screen, manage, and refer patients with common mental health conditions using evidence-based guidance.
           </p>
           <div class="pt-2">
-            <a href="https://srhin.org/braveheart-ai/" class="inline-flex items-center gap-2 bg-[#009900] hover:bg-[#007a00] text-white text-xs font-semibold px-6 py-2.5 rounded-full transition shadow-sm">
+            <a href="#" class="inline-flex items-center gap-2 bg-[#009900] hover:bg-[#007a00] text-white text-xs font-semibold px-6 py-2.5 rounded-full transition shadow-sm">
               <span>Explore BraveHeart AI</span>
               <span class="material-symbols-outlined text-base">north_east</span>
             </a>
@@ -693,10 +563,6 @@
             <a href="https://wa.me/2349020155602?text=Hi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#009900] hover:bg-[#007a00] text-white text-xs font-semibold px-5 py-2.5 rounded-full transition shadow-sm">
               <span>Chat on WhatsApp</span>
               <span class="material-symbols-outlined text-base">chat</span>
-            </a>
-            <a href="https://srhin.org/our-project/betamama-pikin-project/" class="inline-flex items-center gap-2 bg-white border border-slate-300 text-slate-700 hover:text-[#009900] text-xs font-semibold px-5 py-2.5 rounded-full transition">
-              <span>Explore BetaMama</span>
-              <span class="material-symbols-outlined text-base">north_east</span>
             </a>
           </div>
         </div>
@@ -750,7 +616,7 @@
   <!-- ========================================== -->
   <!-- 6. EXPLORE OUR PROJECTS                    -->
   <!-- ========================================== -->
-  <section class="py-20 bg-slate-50 border-t border-b border-slate-100 px-6">
+  <section id="projects" class="py-20 bg-slate-50 border-t border-b border-slate-100 px-6">
     <div class="max-w-6xl mx-auto space-y-12">
       <div class="space-y-1">
         <span class="text-sm font-semibold text-[#009900] tracking-wide uppercase font-body">Deployments</span>
@@ -791,7 +657,7 @@
             <img src="https://srhin.org/wp-content/uploads/2026/07/Media_1223641_smxx-scaled.jpg" alt="5G Clinic" class="w-full h-48 object-cover">
           </div>
           <div>
-            <a href="https://srhin.org/5g_remote_clinic_project/" class="inline-flex items-center gap-2 bg-[#009900] hover:bg-[#007a00] text-white text-xs font-semibold px-6 py-2.5 rounded-full transition shadow-sm">
+            <a href="#" class="inline-flex items-center gap-2 bg-[#009900] hover:bg-[#007a00] text-white text-xs font-semibold px-6 py-2.5 rounded-full transition shadow-sm">
               <span>Learn More</span>
               <span class="material-symbols-outlined text-base">north_east</span>
             </a>
@@ -813,10 +679,10 @@
     </p>
   </section>
 
-<!-- ========================================== -->
+  <!-- ========================================== -->
   <!-- 8. BLOGS & INTERNAL NEWS (DYNAMIC API)     -->
   <!-- ========================================== -->
-  <section class="py-20 bg-slate-50 border-t border-b border-slate-100 px-6">
+  <section id="blogs" class="py-20 bg-slate-50 border-t border-b border-slate-100 px-6">
     <div class="max-w-6xl mx-auto space-y-12">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div class="space-y-1">
@@ -827,7 +693,7 @@
           <h2 class="text-3xl md:text-4xl font-heading font-semibold text-slate-900">Blogs &amp; Internal News</h2>
           <p class="text-slate-600 text-sm font-body">Stay updated with the latest stories and insights from our dedicated team.</p>
         </div>
-        <!-- Dynamic "More Blogs" Button Container (Matched to SRHIN Green Theme) -->
+        <!-- Dynamic "More Blogs" Button Container (Pointing to future subpage placeholder #) -->
         <div id="alpha-more-blogs-btn-wrapper" class="hidden">
           <a href="https://srhin.org/blog-database/?category=alpha" class="inline-flex items-center gap-2 bg-[#009900] hover:bg-[#007a00] text-white text-xs font-semibold px-6 py-3 rounded-full transition shadow-sm">
             <span>More Blogs</span>
@@ -838,7 +704,6 @@
 
       <!-- Dynamic Grid Container where posts will be injected via JavaScript -->
       <div id="alpha-dynamic-blogs-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Loading state skeleton / fallback -->
         <div class="col-span-full text-center py-10 text-slate-400 text-sm font-body">
           Loading latest Alpha insights...
         </div>
@@ -849,7 +714,7 @@
   <!-- ========================================== -->
   <!-- 9. TEAM SECTION (10 ALPHA Members)         -->
   <!-- ========================================== -->
-  <section class="py-20 bg-white px-6">
+  <section id="team" class="py-20 bg-white px-6">
     <div class="max-w-6xl mx-auto space-y-6">
       <div class="space-y-1">
         <div class="flex items-center gap-2 text-xs uppercase tracking-wider text-[#009900] font-bold font-body">
@@ -878,19 +743,16 @@
               <!-- 1. Dr. Isaac Olufadewa -->
               <div class="srhin-team-card">
                 <div class="srhin-team-card-inner">
-                  <a href="https://srhin.org/profile-page-dr-isaac-olufadewa/" class="srhin-team-avatar" aria-label="View Dr. Isaac Olufadewa's profile">
+                  <a href="#" class="srhin-team-avatar" aria-label="View Dr. Isaac Olufadewa's profile">
                     <img src="https://srhin.org/wp-content/uploads/2026/03/Dr-ISAAC-PICTURE-e1782924163323.jpg" alt="Dr. Isaac Olufadewa">
                   </a>
-                  <a href="https://srhin.org/profile-page-dr-isaac-olufadewa/" class="srhin-team-name-link">
+                  <a href="#" class="srhin-team-name-link">
                     <h3 class="srhin-team-name">Dr. Isaac Olufadewa</h3>
                   </a>
                   <p class="srhin-team-role">Principal Investigator (Health AI Research and Innovation)</p>
                   <div class="srhin-team-actions">
                     <a href="https://www.linkedin.com/in/isaacolufadewa/" target="_blank" rel="noopener noreferrer" class="srhin-team-social" aria-label="LinkedIn">
                       <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    </a>
-                    <a href="https://srhin.org/profile-page-dr-isaac-olufadewa/" class="srhin-team-profile-btn" aria-label="View Full Profile">
-                      <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                   </div>
                 </div>
@@ -899,19 +761,16 @@
               <!-- 2. Miracle Adesina -->
               <div class="srhin-team-card">
                 <div class="srhin-team-card-inner">
-                  <a href="https://srhin.org/profile-page-miracle-adesina/" class="srhin-team-avatar" aria-label="View Miracle Adesina's profile">
+                  <a href="#" class="srhin-team-avatar" aria-label="View Miracle Adesina's profile">
                     <img src="https://srhin.org/wp-content/uploads/2026/03/MIRACLE-PICTURE-e1786304266930.jpg" alt="Miracle Adesina">
                   </a>
-                  <a href="https://srhin.org/profile-page-miracle-adesina/" class="srhin-team-name-link">
+                  <a href="#" class="srhin-team-name-link">
                     <h3 class="srhin-team-name">Miracle Adesina</h3>
                   </a>
                   <p class="srhin-team-role">Associate Research Scientist (Lived Experience Lead)</p>
                   <div class="srhin-team-actions">
                     <a href="https://www.linkedin.com/in/miracle-adesina-86b632153/" target="_blank" rel="noopener noreferrer" class="srhin-team-social" aria-label="LinkedIn">
                       <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    </a>
-                    <a href="https://srhin.org/profile-page-miracle-adesina/" class="srhin-team-profile-btn" aria-label="View Full Profile">
-                      <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                   </div>
                 </div>
@@ -920,19 +779,16 @@
               <!-- 3. Owen Adeniyi -->
               <div class="srhin-team-card">
                 <div class="srhin-team-card-inner">
-                  <a href="https://srhin.org/profile-page-owen-adeniyi/" class="srhin-team-avatar" aria-label="View Owen Adeniyi's profile">
+                  <a href="#" class="srhin-team-avatar" aria-label="View Owen Adeniyi's profile">
                     <img src="https://srhin.org/wp-content/uploads/2025/10/Gemini_Generated_Image_2qi79c2qi79c2qi7-e1761645256640.png" alt="Owen Adeniyi">
                   </a>
-                  <a href="https://srhin.org/profile-page-owen-adeniyi/" class="srhin-team-name-link">
+                  <a href="#" class="srhin-team-name-link">
                     <h3 class="srhin-team-name">Owen Adeniyi</h3>
                   </a>
                   <p class="srhin-team-role">Health AI Product Engineer (Digital Health Product Development)</p>
                   <div class="srhin-team-actions">
                     <a href="https://www.linkedin.com/in/owen-adeniyi-742559182/" target="_blank" rel="noopener noreferrer" class="srhin-team-social" aria-label="LinkedIn">
                       <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    </a>
-                    <a href="https://srhin.org/profile-page-owen-adeniyi/" class="srhin-team-profile-btn" aria-label="View Full Profile">
-                      <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                   </div>
                 </div>
@@ -941,19 +797,16 @@
               <!-- 4. Ezekiel Oladejo -->
               <div class="srhin-team-card">
                 <div class="srhin-team-card-inner">
-                  <a href="https://srhin.org/profile-page-ezekiel-oladejo/" class="srhin-team-avatar" aria-label="View Ezekiel Oladejo's profile">
+                  <a href="#" class="srhin-team-avatar" aria-label="View Ezekiel Oladejo's profile">
                     <img src="https://srhin.org/wp-content/uploads/2026/03/Ezekiel-1.png" alt="Ezekiel Oladejo">
                   </a>
-                  <a href="https://srhin.org/profile-page-ezekiel-oladejo/" class="srhin-team-name-link">
+                  <a href="#" class="srhin-team-name-link">
                     <h3 class="srhin-team-name">Ezekiel Oladejo</h3>
                   </a>
                   <p class="srhin-team-role">Associate Research Scientist (Speech and Conversational AI)</p>
                   <div class="srhin-team-actions">
                     <a href="https://www.linkedin.com/in/ezekiel-oladejo-92a970195/" target="_blank" rel="noopener noreferrer" class="srhin-team-social" aria-label="LinkedIn">
                       <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    </a>
-                    <a href="https://srhin.org/profile-page-ezekiel-oladejo/" class="srhin-team-profile-btn" aria-label="View Full Profile">
-                      <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                   </div>
                 </div>
@@ -962,19 +815,16 @@
               <!-- 5. Fadekemi Fadare -->
               <div class="srhin-team-card">
                 <div class="srhin-team-card-inner">
-                  <a href="https://srhin.org/profile-page-fadekemi-fadare/" class="srhin-team-avatar" aria-label="View Fadekemi Fadare's profile">
+                  <a href="#" class="srhin-team-avatar" aria-label="View Fadekemi Fadare's profile">
                     <img src="https://srhin.org/wp-content/uploads/2026/10/Website-photo-e1791210192226.png" alt="Fadekemi Fadare">
                   </a>
-                  <a href="https://srhin.org/profile-page-fadekemi-fadare/" class="srhin-team-name-link">
+                  <a href="#" class="srhin-team-name-link">
                     <h3 class="srhin-team-name">Fadekemi Fadare</h3>
                   </a>
                   <p class="srhin-team-role">AI Safety Researcher (Responsible AI and Model Evaluation)</p>
                   <div class="srhin-team-actions">
                     <a href="https://www.linkedin.com/in/fadekemi-fadare-94875841b" target="_blank" rel="noopener noreferrer" class="srhin-team-social" aria-label="LinkedIn">
                       <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    </a>
-                    <a href="https://srhin.org/profile-page-fadekemi-fadare/" class="srhin-team-profile-btn" aria-label="View Full Profile">
-                      <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                   </div>
                 </div>
@@ -983,103 +833,16 @@
               <!-- 6. Olamide Oso -->
               <div class="srhin-team-card">
                 <div class="srhin-team-card-inner">
-                  <a href="https://srhin.org/profile-page-olamide-oso/" class="srhin-team-avatar" aria-label="View Olamide Oso's profile">
+                  <a href="#" class="srhin-team-avatar" aria-label="View Olamide Oso's profile">
                     <img src="https://srhin.org/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-19-at-16.32.49-e1771516291205.jpeg" alt="Olamide Oso">
                   </a>
-                  <a href="https://srhin.org/profile-page-olamide-oso/" class="srhin-team-name-link">
+                  <a href="#" class="srhin-team-name-link">
                     <h3 class="srhin-team-name">Olamide Oso</h3>
                   </a>
                   <p class="srhin-team-role">AI Systems Engineer (Conversational AI Infrastructure)</p>
                   <div class="srhin-team-actions">
                     <a href="https://www.linkedin.com/in/oso-olamide/" target="_blank" rel="noopener noreferrer" class="srhin-team-social" aria-label="LinkedIn">
                       <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    </a>
-                    <a href="https://srhin.org/profile-page-olamide-oso/" class="srhin-team-profile-btn" aria-label="View Full Profile">
-                      <span class="material-symbols-outlined">arrow_forward</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 7. Dr Uthman Babatunde -->
-              <div class="srhin-team-card">
-                <div class="srhin-team-card-inner">
-                  <a href="https://srhin.org/profile-page-dr-uthman-babatunde/" class="srhin-team-avatar" aria-label="View Dr Uthman Babatunde's profile">
-                    <img src="https://srhin.org/wp-content/uploads/2026/03/Uthman-Profile-Pic.jpeg" alt="Dr Uthman Babatunde">
-                  </a>
-                  <a href="https://srhin.org/profile-page-dr-uthman-babatunde/" class="srhin-team-name-link">
-                    <h3 class="srhin-team-name">Dr Uthman Babatunde</h3>
-                  </a>
-                  <p class="srhin-team-role">Associate Research Scientist (Clinical NLP and Language Models)</p>
-                  <div class="srhin-team-actions">
-                    <a href="https://ng.linkedin.com/in/uthman-babatunde-m-d-126582286" target="_blank" rel="noopener noreferrer" class="srhin-team-social" aria-label="LinkedIn">
-                      <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    </a>
-                    <a href="https://srhin.org/profile-page-dr-uthman-babatunde/" class="srhin-team-profile-btn" aria-label="View Full Profile">
-                      <span class="material-symbols-outlined">arrow_forward</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 8. Dr. Julianah Adesina -->
-              <div class="srhin-team-card">
-                <div class="srhin-team-card-inner">
-                  <a href="https://srhin.org/profile-page-dr-julianah-adesina/" class="srhin-team-avatar" aria-label="View Dr. Julianah Adesina's profile">
-                    <img src="https://srhin.org/wp-content/uploads/2026/08/1761642554208-768x768-1-e1786307231369.jpg" alt="Dr. Julianah Adesina">
-                  </a>
-                  <a href="https://srhin.org/profile-page-dr-julianah-adesina/" class="srhin-team-name-link">
-                    <h3 class="srhin-team-name">Dr. Julianah Adesina</h3>
-                  </a>
-                  <p class="srhin-team-role">Associate Research Scientist (AI Bioethics and Governance)</p>
-                  <div class="srhin-team-actions">
-                    <a href="https://www.linkedin.com/in/julianah-a-45914913b/" target="_blank" rel="noopener noreferrer" class="srhin-team-social" aria-label="LinkedIn">
-                      <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    </a>
-                    <a href="https://srhin.org/profile-page-dr-julianah-adesina/" class="srhin-team-profile-btn" aria-label="View Full Profile">
-                      <span class="material-symbols-outlined">arrow_forward</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 9. Dr. Matthew Olawoyin -->
-              <div class="srhin-team-card">
-                <div class="srhin-team-card-inner">
-                  <a href="https://srhin.org/profile-page-dr-matthew-olawoyin/" class="srhin-team-avatar" aria-label="View Dr. Matthew Olawoyin's profile">
-                    <img src="https://srhin.org/wp-content/uploads/2026/07/1770056532066-e1786007903601.jpeg" alt="Dr. Matthew Olawoyin">
-                  </a>
-                  <a href="https://srhin.org/profile-page-dr-matthew-olawoyin/" class="srhin-team-name-link">
-                    <h3 class="srhin-team-name">Dr. Matthew Olawoyin</h3>
-                  </a>
-                  <p class="srhin-team-role">Associate Research Scientist (Multilingual and Low-Resource Health NLP)</p>
-                  <div class="srhin-team-actions">
-                    <a href="https://www.linkedin.com/in/matthdavid/" target="_blank" rel="noopener noreferrer" class="srhin-team-social" aria-label="LinkedIn">
-                      <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    </a>
-                    <a href="https://srhin.org/profile-page-dr-matthew-olawoyin/" class="srhin-team-profile-btn" aria-label="View Full Profile">
-                      <span class="material-symbols-outlined">arrow_forward</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 10. Dr. Musa Ayanwale -->
-              <div class="srhin-team-card">
-                <div class="srhin-team-card-inner">
-                  <a href="https://srhin.org/profile-page-dr-musa-ayanwale/" class="srhin-team-avatar" aria-label="View Dr. Musa Ayanwale's profile">
-                    <img src="https://srhin.org/wp-content/uploads/2026/08/musa-adekunle-ayanwale-e1786307257309-768x768.jpeg" alt="Dr. Musa Ayanwale">
-                  </a>
-                  <a href="https://srhin.org/profile-page-dr-musa-ayanwale/" class="srhin-team-name-link">
-                    <h3 class="srhin-team-name">Dr. Musa Ayanwale</h3>
-                  </a>
-                  <p class="srhin-team-role">Associate Research Scientist (Psychometrics and AI Evaluation)</p>
-                  <div class="srhin-team-actions">
-                    <a href="https://www.linkedin.com/in/kunle-ayanwale-c2-nrf-rated-researcher-06117ab7/" target="_blank" rel="noopener noreferrer" class="srhin-team-social" aria-label="LinkedIn">
-                      <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    </a>
-                    <a href="https://srhin.org/profile-page-dr-musa-ayanwale/" class="srhin-team-profile-btn" aria-label="View Full Profile">
-                      <span class="material-symbols-outlined">arrow_forward</span>
                     </a>
                   </div>
                 </div>
@@ -1137,19 +900,19 @@
   </style>
 
   <!-- ========================================== -->
-  <!-- 11. OFFICIAL SRHIN FOOTER                  -->
+  <!-- 11. INDEPENDENT ALPHA LANDING FOOTER       -->
   <!-- ========================================== -->
-  <footer class="bg-white border-t border-slate-200 text-slate-700 font-sans text-sm">
+  <footer id="contact" class="bg-white border-t border-slate-200 text-slate-700 font-sans text-sm">
     <div class="max-w-7xl mx-auto px-6 py-16">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10">
         
         <!-- Brand & Mission Column -->
         <div class="sm:col-span-2 lg:col-span-4 space-y-6">
-          <a href="https://srhin.org/" class="inline-block">
+          <a href="#" class="inline-block">
             <img src="https://srhin.org/wp-content/uploads/2023/02/Logo-with-horizontal-text-colour@4x.png" alt="Slum and Rural Health Initiative" class="h-10 w-auto">
           </a>
           <p class="text-slate-600 leading-relaxed font-body text-sm max-w-sm">
-            Leveraging advocacy, research, and technology to advance health equity in Africa’s most underserved communities.
+            AI for Low-Resource Public Health Application Centre. Translating responsible AI research into tools that work in real communities.
           </p>
           
           <!-- Social Icons -->
@@ -1172,23 +935,26 @@
           </div>
         </div>
 
-        <!-- About Us -->
+        <!-- Quick Links -->
         <div class="sm:col-span-1 lg:col-span-2 space-y-4">
-          <h2 class="text-base font-bold text-slate-900 font-heading">About Us</h2>
+          <h2 class="text-base font-bold text-slate-900 font-heading">Navigation</h2>
           <ul class="space-y-2 text-sm text-slate-600 font-body">
-            <li><a href="https://srhin.org/our-values/" class="hover:text-[#009900] transition">Our Values</a></li>
-            <li><a href="https://srhin.org/leadership-team/" class="hover:text-[#009900] transition">Leadership Team</a></li>
-            <li><a href="https://srhin.org/anthem-and-pledge/" class="hover:text-[#009900] transition">Voice &amp; Commitment</a></li>
+            <li><a href="#" class="hover:text-[#009900] transition">Home</a></li>
+            <li><a href="#innovations" class="hover:text-[#009900] transition">Innovations</a></li>
+            <li><a href="#projects" class="hover:text-[#009900] transition">Projects</a></li>
+            <li><a href="#blogs" class="hover:text-[#009900] transition">Insights</a></li>
+            <li><a href="#team" class="hover:text-[#009900] transition">Team</a></li>
           </ul>
         </div>
 
-        <!-- Get Involved -->
+        <!-- Other Research Centers -->
         <div class="sm:col-span-1 lg:col-span-2 space-y-4">
-          <h2 class="text-base font-bold text-slate-900 font-heading">Get Involved</h2>
+          <h2 class="text-base font-bold text-slate-900 font-heading">Other Centers</h2>
           <ul class="space-y-2 text-sm text-slate-600 font-body">
-            <li><a href="https://srhin.org/donate/" class="hover:text-[#009900] transition">Donate</a></li>
-            <li><a href="https://srhin.org/volunteer/" class="hover:text-[#009900] transition">Volunteer</a></li>
-            <li><a href="https://srhin.org/career/" class="hover:text-[#009900] transition">Join Our Team</a></li>
+            <li><a href="https://prime.srhin.org" target="_blank" rel="noopener noreferrer" class="hover:text-[#009900] transition">PRIME</a></li>
+            <li><a href="https://mhile.srhin.org" target="_blank" rel="noopener noreferrer" class="hover:text-[#009900] transition">MHILE</a></li>
+            <li><a href="https://cohazd.srhin.org" target="_blank" rel="noopener noreferrer" class="hover:text-[#009900] transition">COHAZD</a></li>
+            <li><a href="https://cempher.srhin.org" target="_blank" rel="noopener noreferrer" class="hover:text-[#009900] transition">CEMPHER</a></li>
           </ul>
         </div>
 
@@ -1201,18 +967,6 @@
               <a href="https://maps.app.goo.gl/w4xEizqNAVgn2tPS7" target="_blank" rel="noopener noreferrer" class="hover:text-[#009900] transition">
                 <strong class="text-slate-800">SRHIN Campus Headquarters:</strong> 11B, Abiodun Akerele Street, Old Bodija, Ibadan 200221, Oyo State, Nigeria
               </a>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-base text-slate-400 mt-0.5 flex-shrink-0">location_on</span>
-              <span>18, Alegongo Zone 7, Akobo Estate, Ibadan, Oyo State, Nigeria</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-base text-slate-400 mt-0.5 flex-shrink-0">location_on</span>
-              <span>Durumi IDP Camp, FIRS Training School Road, Durumi, Abuja 900103, FCT, Nigeria</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-base text-slate-400 mt-0.5 flex-shrink-0">location_on</span>
-              <span>New Kuchingoro IDP Camp, by Games Village Gate, Kaura District, Abuja 900103, FCT, Nigeria</span>
             </li>
             <li class="flex items-center gap-3">
               <span class="material-symbols-outlined text-base text-slate-400 flex-shrink-0">call</span>
@@ -1229,10 +983,10 @@
 
       <!-- Sub-footer / Legal -->
       <div class="mt-14 pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-body">
-        <p>&copy; 2026 Slum and Rural Health Initiative Network. All rights reserved.</p>
+        <p>&copy; 2026 ALPHA Research Centre. All rights reserved.</p>
         <div class="flex items-center gap-6">
-          <a href="https://srhin.org/privacy-policy/" class="hover:text-[#009900] transition">Privacy Policy</a>
-          <a href="https://srhin.org/disclaimer-page/" class="hover:text-[#009900] transition">Disclaimer Page</a>
+          <a href="#" class="hover:text-[#009900] transition">Privacy Policy</a>
+          <a href="#" class="hover:text-[#009900] transition">Terms of Use</a>
         </div>
       </div>
     </div>
@@ -1748,70 +1502,6 @@
     })();
   </script>
 
-  <!-- Alert Bar API Script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var container = document.getElementById("srhin-alert-container");
-      if (!container) return;
-
-      var apiUrl = "https://srhin.org/wp-json/srhin/v1/active-alert?t=" + new Date().getTime();
-
-      fetch(apiUrl)
-        .then(function (res) { return res.json(); })
-        .then(function (data) {
-          if (!data || !data.has_alert) return;
-
-          var dismissedKey = "srhin_dismissed_" + data.id;
-          if (localStorage.getItem(dismissedKey)) return;
-
-          document.getElementById("srhin-alert-tag").textContent = data.tag;
-          document.getElementById("srhin-alert-msg").textContent = data.message;
-
-          var actionWrapper = document.getElementById("srhin-action-wrapper");
-          var cta = document.getElementById("srhin-alert-cta");
-
-          if (data.url && data.url.trim() !== "") {
-            cta.href = data.url;
-            cta.textContent = data.button || "Learn More";
-            actionWrapper.style.display = "block";
-          } else {
-            actionWrapper.style.display = "none";
-          }
-
-          var factBtn = document.getElementById("srhin-fact-toggle");
-          var drawer  = document.getElementById("srhin-alert-drawer");
-
-          if (data.fact && data.fact.trim() !== "") {
-            document.getElementById("srhin-alert-fact").textContent = data.fact;
-            factBtn.addEventListener("click", function () {
-              var isOpen = drawer.style.maxHeight && drawer.style.maxHeight !== "0px";
-              if (isOpen) {
-                drawer.style.maxHeight = "0px";
-                factBtn.setAttribute("aria-expanded", "false");
-                factBtn.innerHTML = "Quick Fact &#9662;";
-              } else {
-                drawer.style.maxHeight = "240px";
-                factBtn.setAttribute("aria-expanded", "true");
-                factBtn.innerHTML = "Close Fact &#9652;";
-              }
-            });
-          } else {
-            factBtn.style.display = "none";
-          }
-
-          container.style.display = "block";
-
-          document.getElementById("srhin-alert-close").addEventListener("click", function () {
-            container.style.display = "none";
-            localStorage.setItem(dismissedKey, "true");
-          });
-        })
-        .catch(function (err) {
-          console.debug("Alert check completed.", err);
-        });
-    });
-  </script>
-
   <!-- Scroll-to-Top Script -->
   <script>
     const scrollTopBtn = document.getElementById('ast-scroll-top');
@@ -1830,95 +1520,87 @@
   </script>
 
   <!-- Dynamic WordPress Alpha Blog Fetcher -->
-<script>
-  document.addEventListener("DOMContentLoaded", async function () {
-    const gridContainer = document.getElementById("alpha-dynamic-blogs-grid");
-    const moreBtnWrapper = document.getElementById("alpha-more-blogs-btn-wrapper");
-    
-    if (!gridContainer) return;
-
-    try {
-      // 1. Fetch category ID for 'alpha' to ensure accurate querying
-      const catResponse = await fetch("https://srhin.org/wp-json/wp/v2/categories?slug=alpha");
-      const categories = await catResponse.json();
+  <script>
+    document.addEventListener("DOMContentLoaded", async function () {
+      const gridContainer = document.getElementById("alpha-dynamic-blogs-grid");
+      const moreBtnWrapper = document.getElementById("alpha-more-blogs-btn-wrapper");
       
-      let categoryParam = "";
-      if (categories && categories.length > 0) {
-        categoryParam = `&categories=${categories[0].id}`;
-      }
+      if (!gridContainer) return;
 
-      // 2. Fetch the 3 latest posts for Alpha (including featured media and author details)
-      const postsResponse = await fetch(`https://srhin.org/wp-json/wp/v2/posts?per_page=3${categoryParam}&_embed=true`);
-      const posts = await postsResponse.json();
-
-      if (!posts || posts.length === 0) {
-        gridContainer.innerHTML = `<div class="col-span-full text-center py-10 text-slate-500 text-sm font-body">No recent blog posts found for Alpha at the moment.</div>`;
-        return;
-      }
-
-      // 3. Clear container and render posts
-      gridContainer.innerHTML = "";
-      
-      posts.forEach(post => {
-        // Extract featured image safely
-        let imageUrl = "https://srhin.org/wp-content/uploads/2025/11/ChatGPT-Image-Nov-27-2025-04_19_27-PM.png"; // Fallback default image
-        if (post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0].source_url) {
-          imageUrl = post._embedded['wp:featuredmedia'][0].source_url;
+      try {
+        const catResponse = await fetch("https://srhin.org/wp-json/wp/v2/categories?slug=alpha");
+        const categories = await catResponse.json();
+        
+        let categoryParam = "";
+        if (categories && categories.length > 0) {
+          categoryParam = `&categories=${categories[0].id}`;
         }
 
-        // Format Date
-        const publishDate = new Date(post.date).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
+        const postsResponse = await fetch(`https://srhin.org/wp-json/wp/v2/posts?per_page=3${categoryParam}&_embed=true`);
+        const posts = await postsResponse.json();
+
+        if (!posts || posts.length === 0) {
+          gridContainer.innerHTML = `<div class="col-span-full text-center py-10 text-slate-500 text-sm font-body">No recent blog posts found for Alpha at the moment.</div>`;
+          return;
+        }
+
+        gridContainer.innerHTML = "";
+        
+        posts.forEach(post => {
+          let imageUrl = "https://srhin.org/wp-content/uploads/2025/11/ChatGPT-Image-Nov-27-2025-04_19_27-PM.png";
+          if (post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0].source_url) {
+            imageUrl = post._embedded['wp:featuredmedia'][0].source_url;
+          }
+
+          const publishDate = new Date(post.date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          });
+
+          let cleanExcerpt = post.excerpt.rendered.replace(/<[^>]*>?/gm, '');
+          if (cleanExcerpt.length > 120) {
+            cleanExcerpt = cleanExcerpt.substring(0, 120) + '...';
+          }
+
+          const articleHTML = `
+            <article class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm flex flex-col justify-between p-6 space-y-5">
+              <div class="h-56 w-full rounded-2xl overflow-hidden bg-slate-100">
+                <img src="${imageUrl}" alt="${post.title.rendered}" class="w-full h-full object-cover">
+              </div>
+              <div class="space-y-2">
+                <span class="text-xs text-slate-400 font-semibold uppercase">${publishDate}</span>
+                <h3 class="text-xl font-heading font-semibold text-slate-900">
+                  <a href="${post.link}" target="_blank" rel="noopener noreferrer" class="hover:text-[#009900] transition">
+                    ${post.title.rendered}
+                  </a>
+                </h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                  ${cleanExcerpt}
+                </p>
+              </div>
+              <div>
+                <a href="${post.link}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#009900] hover:underline">
+                  <span>Read more</span>
+                  <span class="material-symbols-outlined text-sm">north_east</span>
+                </a>
+              </div>
+            </article>
+          `;
+
+          gridContainer.insertAdjacentHTML('beforeend', articleHTML);
         });
 
-        // Clean up post excerpt HTML tags
-        let cleanExcerpt = post.excerpt.rendered.replace(/<[^>]*>?/gm, '');
-        if (cleanExcerpt.length > 120) {
-          cleanExcerpt = cleanExcerpt.substring(0, 120) + '...';
+        if (moreBtnWrapper) {
+          moreBtnWrapper.classList.remove('hidden');
         }
 
-        // Build article card markup matching your design system
-        const articleHTML = `
-          <article class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm flex flex-col justify-between p-6 space-y-5">
-            <div class="h-56 w-full rounded-2xl overflow-hidden bg-slate-100">
-              <img src="${imageUrl}" alt="${post.title.rendered}" class="w-full h-full object-cover">
-            </div>
-            <div class="space-y-2">
-              <span class="text-xs text-slate-400 font-semibold uppercase">${publishDate}</span>
-              <h3 class="text-xl font-heading font-semibold text-slate-900">
-                <a href="${post.link}" class="hover:text-[#009900] transition">
-                  ${post.title.rendered}
-                </a>
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed">
-                ${cleanExcerpt}
-              </p>
-            </div>
-            <div>
-              <a href="${post.link}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#009900] hover:underline">
-                <span>Read more</span>
-                <span class="material-symbols-outlined text-sm">north_east</span>
-              </a>
-            </div>
-          </article>
-        `;
-
-        gridContainer.insertAdjacentHTML('beforeend', articleHTML);
-      });
-
-      // 4. Show the "More Blogs" button since posts are successfully loaded
-      if (moreBtnWrapper) {
-        moreBtnWrapper.classList.remove('hidden');
+      } catch (error) {
+        console.error("Error fetching dynamic Alpha blogs:", error);
+        gridContainer.innerHTML = `<div class="col-span-full text-center py-10 text-slate-500 text-sm font-body">Unable to load latest posts. Please visit our <a href="https://srhin.org/blog-database/?category=alpha" target="_blank" rel="noopener noreferrer" class="text-[#009900] underline font-semibold">Blog Database</a>.</div>`;
       }
-
-    } catch (error) {
-      console.error("Error fetching dynamic Alpha blogs:", error);
-      gridContainer.innerHTML = `<div class="col-span-full text-center py-10 text-slate-500 text-sm font-body">Unable to load latest posts. Please visit our <a href="https://srhin.org/blog-database/?category=alpha" class="text-[#009900] underline font-semibold">Blog Database</a>.</div>`;
-    }
-  });
-</script>
+    });
+  </script>
 
 </body>
 </html>
