@@ -1620,6 +1620,70 @@
     })();
   </script>
 
+  <!-- Alert Bar API Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var container = document.getElementById("srhin-alert-container");
+      if (!container) return;
+
+      var apiUrl = "https://srhin.org/wp-json/srhin/v1/active-alert?t=" + new Date().getTime();
+
+      fetch(apiUrl)
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (!data || !data.has_alert) return;
+
+          var dismissedKey = "srhin_dismissed_" + data.id;
+          if (localStorage.getItem(dismissedKey)) return;
+
+          document.getElementById("srhin-alert-tag").textContent = data.tag;
+          document.getElementById("srhin-alert-msg").textContent = data.message;
+
+          var actionWrapper = document.getElementById("srhin-action-wrapper");
+          var cta = document.getElementById("srhin-alert-cta");
+
+          if (data.url && data.url.trim() !== "") {
+            cta.href = data.url;
+            cta.textContent = data.button || "Learn More";
+            actionWrapper.style.display = "block";
+          } else {
+            actionWrapper.style.display = "none";
+          }
+
+          var factBtn = document.getElementById("srhin-fact-toggle");
+          var drawer  = document.getElementById("srhin-alert-drawer");
+
+          if (data.fact && data.fact.trim() !== "") {
+            document.getElementById("srhin-alert-fact").textContent = data.fact;
+            factBtn.addEventListener("click", function () {
+              var isOpen = drawer.style.maxHeight && drawer.style.maxHeight !== "0px";
+              if (isOpen) {
+                drawer.style.maxHeight = "0px";
+                factBtn.setAttribute("aria-expanded", "false");
+                factBtn.innerHTML = "Quick Fact &#9662;";
+              } else {
+                drawer.style.maxHeight = "240px";
+                factBtn.setAttribute("aria-expanded", "true");
+                factBtn.innerHTML = "Close Fact &#9652;";
+              }
+            });
+          } else {
+            factBtn.style.display = "none";
+          }
+
+          container.style.display = "block";
+
+          document.getElementById("srhin-alert-close").addEventListener("click", function () {
+            container.style.display = "none";
+            localStorage.setItem(dismissedKey, "true");
+          });
+        })
+        .catch(function (err) {
+          console.debug("Alert check completed.", err);
+        });
+    });
+  </script>
+
   <!-- Scroll-to-Top Script -->
   <script>
     const scrollTopBtn = document.getElementById('ast-scroll-top');
