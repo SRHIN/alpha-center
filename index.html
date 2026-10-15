@@ -286,6 +286,47 @@
 <body>
 
   <!-- ========================================== -->
+  <!-- 10. PUBLIC HEALTH ALERT BAR                -->
+  <!-- ========================================== -->
+  <div id="srhin-alert-container" style="display:none; width:100%; background-color:#003D7A; color:#ffffff; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; font-size:13px; line-height:1.4; border-bottom:3px solid #59C5DC; position:relative; z-index:999999; box-shadow:0 2px 8px rgba(0,0,0,0.15);" role="region" aria-label="Public Health Alert">
+    <div id="srhin-alert-wrapper" style="position:relative; max-width:1200px; margin:0 auto; box-sizing:border-box; padding:9px 45px 9px 20px;">
+      <div id="srhin-content-box" style="line-height:1.5; margin:0; padding:0;">
+        <span id="srhin-alert-tag" style="background-color:#009900; color:#ffffff; font-weight:700; font-size:10px; text-transform:uppercase; letter-spacing:0.5px; padding:2px 8px; border-radius:20px; white-space:nowrap; display:inline-block; margin-right:14px; vertical-align:middle;"></span>
+        <span id="srhin-alert-msg" style="font-weight:500; color:#F0F4F8; display:inline;"></span>
+        <button type="button" id="srhin-fact-toggle" aria-expanded="false" style="background:none; border:none; color:#59C5DC; font-size:12px; font-weight:600; cursor:pointer; padding:0 0 0 6px; text-decoration:none !important; white-space:nowrap; display:inline; outline:none; vertical-align:baseline; font-family:inherit;">Quick Fact &#9662;</button>
+      </div>
+
+      <div id="srhin-action-wrapper" style="display:none; margin-top:6px;">
+        <a href="#" id="srhin-alert-cta" style="background-color:#59C5DC; color:#003D7A !important; text-decoration:none !important; font-weight:600; font-size:11px; padding:4px 10px; border-radius:4px; display:inline-block; white-space:nowrap;"></a>
+      </div>
+
+      <button type="button" id="srhin-alert-close" aria-label="Dismiss banner" style="position:absolute; top:7px; right:8px; background:none; border:none; color:#ffffff; font-size:22px; cursor:pointer; line-height:1; padding:2px 6px; opacity:0.8; outline:none;">&times;</button>
+    </div>
+    
+    <div id="srhin-alert-drawer" style="max-height:0; overflow:hidden; transition:max-height 0.3s ease-out; background-color:#002952; border-top:1px solid rgba(89,197,220,0.25);">
+      <div style="max-width:1200px; margin:0 auto; padding:10px 16px 14px;">
+        <p id="srhin-alert-fact" style="margin:0; font-size:12px; line-height:1.5; color:#D1E8F2;"></p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @media screen and (max-width: 768px) {
+      #srhin-alert-wrapper { padding: 8px 36px 9px 14px !important; }
+      #srhin-alert-tag {
+        display: block !important;
+        width: fit-content !important;
+        margin-bottom: 5px !important;
+        margin-right: 0 !important;
+        font-size: 9px !important;
+        padding: 2px 7px !important;
+      }
+      #srhin-alert-msg { font-size: 12px !important; line-height: 1.4 !important; }
+      #srhin-fact-toggle { font-size: 11px !important; }
+    }
+  </style>
+
+  <!-- ========================================== -->
   <!-- 1. ALPHA LANDING HEADER                    -->
   <!-- ========================================== -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all font-['Manrope',sans-serif]">
@@ -963,47 +1004,6 @@
       </div>
     </div>
   </section>
-
-  <!-- ========================================== -->
-  <!-- 10. PUBLIC HEALTH ALERT BAR                -->
-  <!-- ========================================== -->
-  <div id="srhin-alert-container" style="display:none; width:100%; background-color:#003D7A; color:#ffffff; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; font-size:13px; line-height:1.4; border-bottom:3px solid #59C5DC; position:relative; z-index:999999; box-shadow:0 2px 8px rgba(0,0,0,0.15);" role="region" aria-label="Public Health Alert">
-    <div id="srhin-alert-wrapper" style="position:relative; max-width:1200px; margin:0 auto; box-sizing:border-box; padding:9px 45px 9px 20px;">
-      <div id="srhin-content-box" style="line-height:1.5; margin:0; padding:0;">
-        <span id="srhin-alert-tag" style="background-color:#009900; color:#ffffff; font-weight:700; font-size:10px; text-transform:uppercase; letter-spacing:0.5px; padding:2px 8px; border-radius:20px; white-space:nowrap; display:inline-block; margin-right:14px; vertical-align:middle;"></span>
-        <span id="srhin-alert-msg" style="font-weight:500; color:#F0F4F8; display:inline;"></span>
-        <button type="button" id="srhin-fact-toggle" aria-expanded="false" style="background:none; border:none; color:#59C5DC; font-size:12px; font-weight:600; cursor:pointer; padding:0 0 0 6px; text-decoration:none !important; white-space:nowrap; display:inline; outline:none; vertical-align:baseline; font-family:inherit;">Quick Fact &#9662;</button>
-      </div>
-
-      <div id="srhin-action-wrapper" style="display:none; margin-top:6px;">
-        <a href="#" id="srhin-alert-cta" style="background-color:#59C5DC; color:#003D7A !important; text-decoration:none !important; font-weight:600; font-size:11px; padding:4px 10px; border-radius:4px; display:inline-block; white-space:nowrap;"></a>
-      </div>
-
-      <button type="button" id="srhin-alert-close" aria-label="Dismiss banner" style="position:absolute; top:7px; right:8px; background:none; border:none; color:#ffffff; font-size:22px; cursor:pointer; line-height:1; padding:2px 6px; opacity:0.8; outline:none;">&times;</button>
-    </div>
-    
-    <div id="srhin-alert-drawer" style="max-height:0; overflow:hidden; transition:max-height 0.3s ease-out; background-color:#002952; border-top:1px solid rgba(89,197,220,0.25);">
-      <div style="max-width:1200px; margin:0 auto; padding:10px 16px 14px;">
-        <p id="srhin-alert-fact" style="margin:0; font-size:12px; line-height:1.5; color:#D1E8F2;"></p>
-      </div>
-    </div>
-  </div>
-
-  <style>
-    @media screen and (max-width: 768px) {
-      #srhin-alert-wrapper { padding: 8px 36px 9px 14px !important; }
-      #srhin-alert-tag {
-        display: block !important;
-        width: fit-content !important;
-        margin-bottom: 5px !important;
-        margin-right: 0 !important;
-        font-size: 9px !important;
-        padding: 2px 7px !important;
-      }
-      #srhin-alert-msg { font-size: 12px !important; line-height: 1.4 !important; }
-      #srhin-fact-toggle { font-size: 11px !important; }
-    }
-  </style>
 
   <!-- ========================================== -->
   <!-- 11. INDEPENDENT ALPHA LANDING FOOTER       -->
